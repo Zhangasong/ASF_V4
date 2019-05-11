@@ -67,7 +67,8 @@ var height = 400
                         return percent.toFixed(1) + "%"
                     })
 
-                // -- 資料標籤 -- 
+                // -- 資料標籤 --
+                /* 
                 g.append("text")
                     .attr("transform", function(d) {
                         var x = arc.centroid(d)[0] * 2 
@@ -79,7 +80,7 @@ var height = 400
                     .text(function(d) {
                         return d.data[0]
                     })
-
+                */
                 // -- 資料標籤的連接線 --   
                /*
                g.append("line")
