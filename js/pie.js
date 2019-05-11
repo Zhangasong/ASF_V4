@@ -1,4 +1,4 @@
-var width = 400
+var width = 250
 var height = 400
 
     var svg = d3.select("#in").append("svg")
