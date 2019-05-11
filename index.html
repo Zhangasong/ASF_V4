@@ -201,17 +201,17 @@
 
             </div>
 
-            
-        
-            <div class="row">                   
-                    <div>
-                        <!--<div class="icon">-->>
-                        <div  id ="container"style="width: 75%"> 
-                             <canvas id="canvas"></canvas>
+            <section>
+                <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="20ms">
+                <div class ="hero-area " id ="container"style="width: 50%"> 
+                             <canvas  id="canvas"></canvas>
                         </div>
                         <!--</div>-->
+                        
                         <h5>各國公投結果</h5>
                     <script>
+
+                      
         var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         var color = Chart.helpers.color;
         var horizontalBarChartData = {
@@ -303,12 +303,30 @@
             });
             window.myHorizontalBar.update();
         });
+      
+
+
+
+var waw3 = new WOW(
+      {
+        boxClass:     'BBB',      // 要套用WOW.js縮需要的動畫class(預設是wow)
+        //animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+        offset:       0,          // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+        mobile:       true,       // 手機上是否要套用動畫 (預設是true)
+        live:         true,       // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+        callback:     function(box) {
+          draw_b()
+        },
+        scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
+      }
+    );
+    waw3.init();
+
     </script> 
 
-                    </div>
-
-               
-
+          </div>
+            </section>
+            <div class="row">                   
                     <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="20ms">
                         <!--<div class="icon">-->
                          <div id = "in" class="single-popular-course mb-100 draw fadeInUp " data-wow-delay="500ms">
