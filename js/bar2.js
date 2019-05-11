@@ -20,8 +20,8 @@ var data=[
 var s = d3.select("#long")
           .append('svg')
           .attr({
-            'width':400,
-            'height':400
+            'width':350,
+            'height':350
           });
 
 
